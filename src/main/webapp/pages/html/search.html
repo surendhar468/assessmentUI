@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Client Name / Policy Number search page</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="../css/styles.css" type="text/css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script type="text/javascript" src="../js/main.js"></script>
+	</head>
+	<body>
+		<h3>Client Name / Policy Number Search Page</h3>
+		<form>
+			<div class="searchFilter">
+  			<span class="fa fa-search"></span>
+  			<input type="text" class="searchInputField" id="searchInput"
+					name="searchInput" placeholder="SEARCH (Client Name / Policy Number)">
+</div>
+		</form>
+		<script type="text/javascript">
+			/*JSON containing mock data for list of employees details*/
+			var employeesList = '[{"name":"Ann Liebmann","phone":"+27-61-453-5444","email":"ann.lieb@gmail.com", "policyNumber":"0013983887"}, {"name":"Ann Summer","phone":"+27-61-453-5444","email":"ann.summer@gmail.com", "policyNumber":"0013983887"}, {"name":"Anabelle Samuel","phone":"+27-61-453-5444","email":"anna.samuel@gmail.com", "policyNumber":"0013983887"}]';
+
+			/*start auto search exists data on Client Name/ Policy Number function on the "searchInput" element, and pass along the employees json*/
+			searchFilter(document.getElementById("searchInput"), employeesList);
+		</script>
+	</body>
+</html>
